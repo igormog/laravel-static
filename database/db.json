@@ -1,0 +1,18 @@
+[
+  {
+    "pages": {
+      "0": {
+        "title": "Home",
+        "content": "Norton Symantec provides security products and solutions to protect small, medium, and enterprise businesses from advanced threats, malware, and other cyber attacks. We utilize these security protocols to protect our servers."
+      },
+      "1": {
+        "title": "Page 1",
+        "content": "TRUSTe is a technology compliance and security company based in San Francisco, California. The company helps corporations update their technology so that it complies with government laws, or operates using best practices.."
+      },
+      "2": {
+        "title": "Page 2",
+        "content": "Since 2008, the McAfee SECURE service has consistently forged new ways of addressing the security concerns of online consumers. Every McAfee SECURE certified site is tested and certified to be free of malware, viruses and phishing attacks."
+      }
+    }
+  }
+]
