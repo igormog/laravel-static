@@ -35,12 +35,6 @@
             position: relative;
         }
 
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
         .content {
             text-align: center;
         }
@@ -62,6 +56,11 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        .time {
+            font-size: 14px;
+            color: #999;
+        }
     </style>
 </head>
 <body>
@@ -77,6 +76,9 @@
             <a href="/">Home</a>
             <a href="/page/1">Page 1</a>
             <a href="/page/2">Page 2</a>
+        </div>
+        <div class="time">
+            <p>{{ $time }}</p>
         </div>
     </div>
 </div>
