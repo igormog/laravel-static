@@ -5,16 +5,22 @@ namespace App\Http\Controllers\Pages;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Models\DB\JsonDB;
+use App\Models\Page;
+
 class PagesController extends Controller
 {
     public function show($id = 0)
     {
 
-        $json = file_get_contents(__DIR__ . '/../../../../database/db.json');
-        $json_decode = json_decode($json, true);
+        $page = Page::getPage($id);
+        $title = $page['title'];
+        $content = $page['content'];
 
-        $title = $json_decode[0]['pages'][$id]['title'];
-        $content = $json_decode[0]['pages'][$id]['content'];
+//        ## Write
+//        $json_decode[0]['pages'][0]['content'] = 'Page 1 - test content ' . md5(rand(1000, 10000));
+//        JsonDB::setData($json_decode);
+
 
         return view('pages.page', compact('title', 'content', 'time'));
     }
