@@ -4,64 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>{{ $title }}</title>
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-
-        .time {
-            font-size: 14px;
-            color: #999;
-        }
-    </style>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="flex-center position-ref full-height">
@@ -78,7 +23,7 @@
             <a href="/page/2">Page 2</a>
         </div>
         <div class="time">
-            <p>{{ $time }}</p>
+            <p>Generation time: {{ round((microtime(true) - LARAVEL_START), 3) }} sec.</p>
         </div>
     </div>
 </div>
